@@ -9,7 +9,7 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -mod=readonly -a -ldflags "-w -s" -o ./bin/lorem main.go
 
-FROM alpine:3.15
+FROM alpine:3
 
 WORKDIR /app
 
